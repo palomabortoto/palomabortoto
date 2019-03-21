@@ -1,4 +1,5 @@
 img {border-style: solid;}
+
 table {
   font-family: comic sans, sans-serif;
   border-collapse: collapse;
@@ -8,7 +9,7 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 7px;
 }
 
 tr:nth-child(even) {
@@ -24,6 +25,6 @@ tr:nth-child(odd) {
 }
 
 #color {
-  color: red;
+  color: grey;
 
 }
