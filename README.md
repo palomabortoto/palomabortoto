@@ -1,3 +1,3 @@
 # http://palomabortoto.github.io
-# http://palomabortoto.github.io/js
+# http://palomabortoto.github.io/javascript
 
