@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilo.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+if( localStorage.getItem("usuario") == "marcos" && localStorage.getItem("senha") =="1234")
+{
+  $('#conteudo1').text('Bem vindo(a) a área reservada! Acesso PERMITIDO!');
+}
+else {$('#conteudo1').text ('Acesso NEGADO!!!');
+}
+});
+</script>
+</head>
+<body style="font-family:Trebuchet MS;color:white;background:MediumSeaGreen">
+
+  <div style="background-color:white;padding:15px;text-align:center;">
+    <img src="images/palmeiras.png" style="width:100px;height:100px;margin-left:15px;">
+    <h2>Sociedade Esportiva Palmeiras - SEP</h2>
+
+  </div>
+
+<spam id="conteudo1"></spam>
+
+</body>
+</html>
