@@ -1,3 +1,3 @@
 # http://palomabortoto.github.io
-http://palomabortoto.github.io/geolocalizacao
+# http://palomabortoto.github.io/geolocalizacao
 
