@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -16,19 +14,15 @@
 
   <script>
     $(document).ready(function() {
-
       $("button").click(function() {
         $("p2").toggle();
       });
-
       $("#hide").click(function() {
         $("p1").hide();
       });
       $("#show").click(function() {
         $("p1").show();
       });
-
-
       $('#meuFormulario').on('submit', function(e) {
         e.preventDefault();
         var len1 = $('#usuario').val().length;
@@ -41,49 +35,28 @@
           alert("Nome e/ou Senha Inválida")
         }
       });
-
     });
-
     $(document).ready(function() {
-
-
-
          $('#form1').on('submit', function(e) {
-
            e.preventDefault();
-
-
-
            var api_url = 'https://api.linkpreview.net'
-
            var key = '5ccb9525ad6e74755159c3ffa27fa10e40287ac64f332' // real
-
            $.ajax({
-
              url: api_url + "?key=" + key + "&q=" + $("#endereco").val(),
-
              contentType: "application/json",
-
              dataType: 'json',
-
              success: function(result) {
-
                $("#p1").text(result.title);
-
                $("#p2").text(result.description);
-
                $('#p3').attr('src', result.image);
-
                $("#p4").text(result.url);
-
              }
              });
             });
        });
-
-
   </script>
   </head>
+  
   <body background="images/fundo.jpg" style="font-family:Trebuchet MS;color:MediumSeaGreen;">
 
     <div style="background-color:MediumSeaGreen;padding:15px;text-align:center;">
@@ -98,6 +71,7 @@
       <a href="https://www.palmeirasstore.com/">Loja Oficial</a>
       <a href="https://socio-palmeiras.futebolcard.com/">Avanti</a>
     </div>
+
     <div style="overflow:auto">
       <div class="menu">
 
@@ -187,6 +161,7 @@
 
  </form>
 </div>
+</div>
 
       <div style="overflow:auto">
         <div class="main">
@@ -229,10 +204,10 @@
             <button id="hide">Ocultar</button>
             <button id="show">Rexibir</button>
           </p>
-        </div>
+
 
         </div>
-
+</div>
         <div class="right">
           <link rel="stylesheet" href="css/estilo.css">
           <button>Ocultar / Rexibir</button>
@@ -240,8 +215,9 @@
             <table>
               <tr>
                 <th colspan="2">
-                  <font size="5"> Escudos</font>
+                  <font size="5"> Escudos
                 </th>
+                </font>
               </tr>
 
               <tr>
@@ -290,7 +266,7 @@
               </tr>
           </p2>
           </table>
-        </div>
+      </div>
 
       </meta>
 
@@ -306,6 +282,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+<!--End of Tawk.to Script-->
   </body>
 
 </html>
